@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let accountant of accountants; index as i">
+      <th scope="row">{{i+1}}</th>
+      <th>{{accountant.name}}</th>
+      <th>{{accountant.date}}</th>
+    </tr>
+  
+  </tbody>
+</table>
