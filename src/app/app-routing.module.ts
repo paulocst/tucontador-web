@@ -1,9 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AccountantComponent } from './components/accountant/accountant.component';
+import { AccountantsComponent } from './components/accountants/accountants.component';
+import { SocietyComponent } from './components/society/society.component';
+import { SocietiesComponent } from './components/societies/societies.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  {path:'accountant', component:AccountantComponent}	
+  
+  {path:'contadores', component:AccountantsComponent},
+  {path:'sociedades', component:SocietiesComponent},
+  //{path: '**', redirectTo: '/', pathMatch: 'full'},
+  {path: '', component:HomeComponent, pathMatch: 'full'}  
+
 ];
 
 @NgModule({

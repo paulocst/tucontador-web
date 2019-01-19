@@ -1,27 +1,6 @@
 <app-nav></app-nav>
   <div class="container">
 
-    <h1>La variable es {{show}}</h1>
-    <button class="btn btn-warning mr-1" (click)="show=true" >Contadores</button>
-    <button class="btn btn-info" (click)="show=false">Sociedades</button>
-    
-
-    <ul>
-      <li *ngFor="let person of persons">{{person}}</li>
-    </ul>
-
-    <div class="text-info" *ngIf="show; else sociedades">
-      <h2>Contadores</h2>
-      <p>Es uno de los mas importartes</p>  
-    </div> 
-
-    <ng-template #sociedades>
-      <div class="text-danger">
-        <h2>Sociedades</h2>
-        <p>Es uno de los mas importartes</p>  
-      </div>   
-    </ng-template>
-
     <router-outlet></router-outlet>
 
   </div>

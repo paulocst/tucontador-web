@@ -1,0 +1,33 @@
+<h1>Contadores</h1>
+<!--
+<button class="btn btn-warning mr-1" (click)="show=true" >¿Que son los contadores?</button>
+<button class="btn btn-info" (click)="show=false">¿Que son las sociedades?</button>
+
+<div class="text-info" *ngIf="show; else sociedades">
+  <h2>Contadores</h2>
+  <p>Es uno de los mas importartes</p>  
+</div> 
+
+<ng-template #sociedades>
+  <div class="text-danger">
+    <h2>Sociedades</h2>
+    <p>Es uno de los mas importartes</p>  
+  </div>   
+</ng-template>
+-->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let accountant of accountants; index as i">
+      <th scope="row">{{i+1}}</th>
+      <th>{{accountant.name}}</th>
+      <th>{{accountant.date}}</th>
+    </tr>
+  </tbody>
+</table>
