@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
   
   {path:'contadores', component:AccountantsComponent},
+  {path:'contador/:id', component:AccountantComponent},
   {path:'sociedades', component:SocietiesComponent},
   //{path: '**', redirectTo: '/', pathMatch: 'full'},
   {path: '', component:HomeComponent, pathMatch: 'full'}  

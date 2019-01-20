@@ -31,4 +31,8 @@ export class AccountantService {
   getAccountants(){
   	return this.accountants
   }
+
+  getAccountant(i){
+    return this.accountants[i]
+  }
 }

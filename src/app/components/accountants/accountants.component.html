@@ -25,7 +25,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let accountant of accountants; index as i">
-      <th scope="row">{{i+1}}</th>
+      <th scope="row"><a [routerLink]="['/contador',i]">{{i+1}}</a></th>
       <th>{{accountant.name}}</th>
       <th>{{accountant.date}}</th>
     </tr>
